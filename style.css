@@ -1,0 +1,55 @@
+/* Import Google font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.wrapper {
+  width: 80vmin;
+  height: 90vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background: #293447;
+  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+
+.game-details {
+  color: #b8c6dc;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#game-board {
+  display: grid;
+  background: black;
+  height: 80vmin;
+  width: 80vmin;
+  grid-template-rows: repeat(30, 1fr);
+  grid-template-columns: repeat(30, 1fr);
+}
+
+.snake {
+  background-color: lightgreen;
+  border: 0.25vmin solid black;
+}
+
+.food {
+  background-color: coral;
+  border: 0.25vmin solid black;
+}
